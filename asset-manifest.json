@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ConnectNow/static/css/main.3a35114d.css",
+    "main.js": "/ConnectNow/static/js/main.019678c8.js",
+    "index.html": "/ConnectNow/index.html",
+    "main.3a35114d.css.map": "/ConnectNow/static/css/main.3a35114d.css.map",
+    "main.019678c8.js.map": "/ConnectNow/static/js/main.019678c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a35114d.css",
+    "static/js/main.019678c8.js"
+  ]
+}
