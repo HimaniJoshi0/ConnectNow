@@ -1,2 +1,2 @@
 # ConnectNow
-It is a clone of CodePen
+It is a messaging app
