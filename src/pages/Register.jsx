@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Add from "../img/addAvatar.png";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db, storage } from "../firebase";
@@ -7,6 +7,9 @@ import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
 
 const Register = () => {
+  useEffect(() => {
+    alert("If you enconter any issue in registering, please use this registered email - himani@gmail.com and  password- himanijoshi to login");
+  }, []);
   const [err, setErr] = useState(false);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -68,7 +71,7 @@ const Register = () => {
         <form onSubmit={handleSubmit}>
           <input required type="text" placeholder="display name" />
           <input required type="email" placeholder="email" />
-          <input required type="password" placeholder="password" />
+          <input required type="password" placeholder="minimum 6 characters" />
           <input required style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
             <img src={Add} alt="" />
